@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.3/css/all.css" integrity="sha384-UHRtZLI+pbxtHCWp1t77Bi1L4ZtiqrqD80Kn4Z8NTSRyMA2Fd33n5dQ8lWUE00s/" crossorigin="anonymous">
+  <link rel="stylesheet" href="./css/style.css">
+  <link rel="stylesheet" href="./css/login.css">
+  <title>Printuino | Regisztráció</title>
+</head>
+
+<body>
+
+  <div id="particles-js">
+    <script src="javascript/particles.js"></script>
+    <script src="javascript/app.js"></script>
+  </div>
+
+  <div class="login">
+    <div id="login-box">
+      <div class="left-box">
+        <i class="fas fa-arrow-left" onclick="backToMenu()"></i>
+        <h1>Regisztrálj</h1>
+        <h6> <a href="#">vagy jelentkezz be</a> </h6>
+
+        <input id="input0" type="text" name="username" placeholder="felhasználónév"/>
+        <div class="inputUL" id="inputULName"></div>
+        <div class="error" id="nameError"> <p>Túl rövid vagy foglalt felhasználónév</p> </div>
+
+        <input id="input1" type="text" name="email" placeholder="email" autocomplete="off"/>
+        <div class="inputUL" id="inputULEmail"></div>
+        <div class="error" id="emailError"> <p>Nem érvényes email cím</p> </div>
+
+        <input id="input2" type="password" name="password" placeholder="jelszó" />
+        <div class="inputUL" id="inputULPass"></div>
+        <div class="error" id="passError"> <p>Minimum 6 karakternek kell lennie</p> </div>
+
+        <input id="input3" type="password" name="password2" placeholder="jelszó megerősítése" autocomplete="off"/>
+        <div class="inputUL" id="inputULPass2"></div>
+        <div class="error" id="pass1Error"> <p>A két jelszó nem egyezik meg</p> </div>
+
+        <input type="submit" name="login" value="Regisztráció" />
+      </div>
+      <div class="right-box">
+        <span class="signinwith">További lehetőségek</span>
+
+        <button class="social facebook">Facebook</button>
+        <button class="social twitter">Twitter</button>
+        <button class="social google">Google</button>
+      </div>
+    </div>
+  </div>
+</body>
+<script src="./javascript/login.js"></script>
+</html>

@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href="https://fonts.googleapis.com/css?family=Oswald" rel="stylesheet">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.3/css/all.css" integrity="sha384-UHRtZLI+pbxtHCWp1t77Bi1L4ZtiqrqD80Kn4Z8NTSRyMA2Fd33n5dQ8lWUE00s/" crossorigin="anonymous">
+    <link href="https://fonts.googleapis.com/css?family=Nova+Round" rel="stylesheet">
+    <link rel="stylesheet" href="./css/style.css">
+    <link rel="stylesheet" href="./css/nav.css">
+    <title>Printuino | Kezdőlap</title>
+  </head>
+  <body id="body" onload="onload()">
+    <div id="maindiv">
+      <nav class="nav" id="nav">
+          <a class="logo" href="#" onclick="slide(0)">
+            <img id="logo" src="./imgs/graymini.png" alt="">
+            <p id="logoText">Printuino</p>
+          </a>
+          <i id="userIcon" class="far fa-user-circle fa-2x" onclick="goLogin()"></i>
+          <i id="bars" class="fas fa-bars fa-3x" onclick="goLogin()"></i>
+          <a href="javascript:slide(5)" id="contact" class="contact textNav">Kapcsolat</a>
+          <a href="javascript:slide(4)" id="shop" class="shop textNav">Bolt</a>
+          <a href="javascript:slide(3)" id="arduino" class="arduino textNav">Arduino</a>
+          <a href="javascript:slide(2)" id="print" class="print textNav">3D nyomtatás</a>
+          <a href="javascript:slide(1)" id="about" class="about textNav">Rólunk</a>
+
+          <div id="menubar">
+            <a href="#" id="menu0">Kapcsolat</a>
+            <a href="#" id="menu1">Rólunk</a>
+            <a href="#" id="menu2">Bolt</a>
+            <a href="#" id="menu3">Arduino</a>
+            <a href="#" id="menu4">3D nyomtatás</a>
+            <a href="login.html" id="menu5">Bejelentkezés</a>
+          </div>
+      </nav>
+
+      <div class="main">
+        <div id="slideshow">
+          <img class="slideImg" id="img1" src="./imgs/7.png" alt=""/>
+          <img class="slideImg" id="img2" src="./imgs/8.png" alt=""/>
+          <img class="slideImg" id="img3" src="./imgs/9.png" alt=""/>
+          <img class="slideImg" id="img4" src="./imgs/10.png" alt=""/>
+          <img class="slideImg" id="img5" src="./imgs/11.png" alt=""/>
+          <img class="slideImg" id="img6" src="./imgs/12.png" alt=""/>
+
+          <div class="slideTextHolder">
+            <div id="slideText1" class="slideText">
+              <h1>Printuino</h1>
+              <p></p>
+            </div>
+            <div id="slideText2" class="slideText">
+              <h1>Rólunk</h1>
+              <p></p>
+            </div>
+            <div id="slideText3" class="slideText">
+              <h1>3D nyomtatás</h1>
+              <p></p>
+            </div>
+            <div id="slideText4" class="slideText">
+              <h1>Arduino</h1>
+              <p></p>
+            </div>
+            <div id="slideText5" class="slideText">
+              <h1>Bolt</h1>
+              <p></p>
+            </div>
+            <div id="slideText6" class="slideText">
+              <h1>Kapcsolat</h1>
+              <p></p>
+            </div>
+          </div>
+
+          <div class="slideSpan-holder">
+            <div class="slideSpan" onclick="slide(0)" id="slideSpan1"></div>
+            <div class="slideSpan" onclick="slide(1)" id="slideSpan2"></div>
+            <div class="slideSpan" onclick="slide(2)" id="slideSpan3"></div>
+            <div class="slideSpan" onclick="slide(3)" id="slideSpan4"></div>
+            <div class="slideSpan" onclick="slide(4)" id="slideSpan5"></div>
+            <div class="slideSpan" onclick="slide(5)" id="slideSpan6"></div>
+          </div>
+          <i onclick="slideSide(0)" class="fas fa-chevron-left fa-5x" id="arrowLeft"></i>
+          <i onclick="slideSide(1)" class="fas fa-chevron-right fa-5x" id="arrowRight"></i>
+        </div>
+        <div class="content">
+          <div class="grid">
+
+            <div class="contentBox">
+
+            </div>
+            <div class="contentBox">
+
+            </div>
+            <div class="contentBox">
+
+            </div>
+            <div class="contentBox">
+
+            </div>
+            <div class="contentBox">
+
+            </div>
+            <div class="contentBox">
+
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
+  <script src="./javascript/main.js"></script>
+  <script src="./javascript/nav.js"></script>
+</html>
